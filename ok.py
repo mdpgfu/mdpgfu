@@ -38,6 +38,7 @@ class Room:
         self.room_inhabitants = "Mayor Greenling"
         self.room_exits = {'North', 'East', 'South', 'West'}
 
+
 class Character:
     def __init__(self):
         self.name = ""
@@ -108,7 +109,7 @@ def game_loop():
 
 
 
-
+# test
 # MAIN GAME SECTION
 print_menu(main_menu_list)
 main_menu_choice = get_menu_choice()
