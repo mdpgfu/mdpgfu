@@ -1,5 +1,6 @@
 from pprint import pprint
 
+# placeholder for race, class, menu
 class_list = ('1: Warrior', '2: Ninja', '3: Priest', '4: Wizard')
 race_list = ('1: Human', '2: Elf', '3: Goblin', '4: Orc')
 main_menu_list = ('1: Play', '2: Quit')
@@ -34,6 +35,7 @@ def get_player_class():
 
 class Room:
     def __init__(self):
+        # default placeholder values for 1 room
         self.room_id = 1
         self.room_name = "Town Square"
         self.room_description = "This is a bustling town square."
@@ -75,7 +77,7 @@ class Player(Character):
         self.race = race
         self.player_class = player_class
         self.player_id = player_id
-        self.current_room = room1
+        self.current_room_id = 1
 
     def print_stats(self):
         print "Name", self.name
@@ -95,7 +97,7 @@ class Player(Character):
             game_status = False
 
         else:
-            self.current_room.print_full_room
+            self.current_room.print_full_room()
 
 
 def get_action():
